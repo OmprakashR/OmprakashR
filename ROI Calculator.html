@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>EzTaxPractice ROI Calulation</title>
+</head>
+
+<body class="  mt-5 ">
+    <div class="container">
+        <h3>EzTaxPractice ROI Calulation</h3>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="">
+                    <label>Number of Employees</label>
+                    <input type="text" class="form-control" id="client" value="10" />
+                    <label>Average monthly Salary per Employee</label>
+                    <input type="text" class="form-control" id="Average" value="15000" />
+                    <label>Number of GST Clients</label>
+                    <input type="text" class="form-control" id="GST" value="60" />
+                    <label>Total No of Client</label>
+                    <input type="text" value="200" class="form-control" value="200" />
+                    <label>Current Revenue</label>
+                    <input type="text" value="2000000" class="form-control">
+
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+
+                                Cost Savings Per Employee
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 200px"> <span> Time Saved</span></td>
+                            <td class="text-end" style="width: 200px"> <span id="time_saved">417</span></td>
+                            <td style="width: 200px"> <span> Hours Per Year</span></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px"> <span> Cost Savings</span></td>
+                            <td class="text-end"> <span id="Cost-data">0</span></td>
+                            <td> <span> Per Employee</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped table-bordered mt-2">
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+
+                                Cost Savings For Your Business
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 200px"> <span> Time Saved</span></td>
+                            <td class="text-end" style="width: 200px"> <span id="Cost-Business">417</span></td>
+                            <td style="width: 200px"> <span> Hours Per Year</span></td>
+                        </tr>
+                        <tr>
+                            <td> <span> Cost Savings</span></td>
+                            <td class="text-end"> <span id="Business-saving">0</span></td>
+                            <td> <span> Per Employee</span></td>
+
+                        </tr>
+                        <tr>
+                            <td> <span> Cost of EZTaxPractice</span></td>
+                            <td class="text-end"> <span id="Gst-saving">0</span></td>
+                            <td> <span> Per Employee</span></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped table-bordered mt-2">
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+
+                                What our competitors are charging for similar functionality
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 200px"> <span> Competition Cost </span></td>
+                            <td style="width: 200px;" class="text-end"> <span id="Competition-Cost">0</span></td>
+                            <td style="width: 200px"> <span> Per Year</span></td>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<span id="result"></span>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+
+    <script>
+
+
+        var inputval = document.getElementById("client").value = "10"
+        var inputval = document.getElementById("GST").value = "60"
+
+
+
+        calcode();
+        function calcode() {
+            document.getElementById("client").onkeyup = function () { infoadd() };
+            document.getElementById("GST").onkeyup = function () { infoadd() }
+
+
+            var inputval = document.getElementById("client").value;
+            let timesaved = document.getElementById("time_saved").innerHTML;
+            document.getElementById("Cost-data").innerHTML = timesaved * 60 * 1.111;
+            let Costdata = document.getElementById("Cost-data").innerHTML;
+            document.getElementById("Cost-Business").innerHTML = inputval * timesaved;
+            document.getElementById("Business-saving").innerHTML = inputval * Costdata;
+            let gstclieent = document.getElementById("GST").value;
+            document.getElementById("Gst-saving").innerHTML = gstclieent * 105;
+            let gstclieentdata = document.getElementById("Gst-saving").innerHTML;
+            document.getElementById("Competition-Cost").innerHTML = (inputval * 1000) + (gstclieent * 60);
+            let Competitioncost = document.getElementById("Competition-Cost").innerHTML;
+            let price = document.getElementById("Business-saving").innerHTML;
+            let rupeeIndian = Intl.NumberFormat("en-IN", {
+                style: "currency",
+                currency: "INR",
+            });
+
+            document.getElementById("Business-saving").innerHTML = rupeeIndian.format(price);
+            document.getElementById("Cost-data").innerHTML = rupeeIndian.format(Costdata);
+            document.getElementById("Gst-saving").innerHTML = rupeeIndian.format(gstclieentdata);
+            document.getElementById("Competition-Cost").innerHTML = rupeeIndian.format(Competitioncost);
+        }
+        function infoadd() {
+            calcode();
+        }
+
+    
+    </script>
+
+</body>
+
+</html>
