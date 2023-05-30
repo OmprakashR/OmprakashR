@@ -16,6 +16,7 @@
  ### Top Languages
  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=OmprakashR&layout=compact)
 
+![OmprakashR GitHub stats](https://github-readme-stats.vercel.app/api?username=OmprakashR_icons=true)
 
 <!---
  #### Github Stats
