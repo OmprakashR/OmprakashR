@@ -1,7 +1,7 @@
 # - 👋 Hi, <b> I’m Omprakash Rahangdale </b>
 
-- 👀 I’m interested in ... Web Design and Development.
-- 🌱 I’m currently learning ...
+- 👀 I’m a Web Design and Developer.
+- 🌱 I’m currently learning Webflow.
 - 💞️ I’m looking to collaborate on ... Web Design and HTML Development and css work and Challenges.
 - Best In RWD, Tailwindcss, DaisyUI,  Webflow, Bulam, Bootstrap, CSS3, HTML5.
 - 📫 How to reach me ... Omprakashrahangdale555@gmail.com
