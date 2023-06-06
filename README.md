@@ -27,9 +27,9 @@
 <summary><b>🖍 Design</b></summary>
 <br>
  
- ![](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white); 
- ![Adobe%20XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6)&nbsp;
- ![](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white);
+ ![](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+ ![Adobe%20XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6)
+ ![](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white)
  ![](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)
  
 
