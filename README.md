@@ -5,9 +5,9 @@
 - 💞️ I’m looking to collaborate on ... Web Design HTML Development CSS work and Challenges.
 - Best In RWD, Tailwindcss, DaisyUI,  Webflow, Bulam, Bootstrap, CSS3, HTML5.
 - 📫 How to reach me ... Omprakashrahangdale555@gmail.com
-- <a href="https://www.frontendmentor.io/profile/OmprakashR"> frontend Mentor Profile </a>
--<a href="https://www.behance.net/omruiux">Behance </a>
--<a href="https://cssbattle.dev/player/omi">cssbattle</a>
+- <a href="https://www.frontendmentor.io/profile/OmprakashR"> Frontend Mentor Profile </a>
+- <a href="https://www.behance.net/omruiux">Behance </a>
+- <a href="https://cssbattle.dev/player/omi">cssbattle</a>
   
  
  ![](https://komarev.com/ghpvc/?username=OmprakashR)
